@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-29",
+  "release": "0.1.1",
+  "scope": "Revised table exports, aggregate recomputation, figure regeneration and real public example; no new full raw-image GPU training.",
+  "aggregate_run": {
+    "status": "pass",
+    "duration_seconds": 25.24,
+    "numeric_files_compared": 436,
+    "all_match": true,
+    "absolute_tolerance": 1e-10,
+    "does_not_prove_refitting": true
+  },
+  "public_example_refit": {
+    "dataset": "WSI-COAD",
+    "records": 112,
+    "positive": 56,
+    "feature_dimension": 1536,
+    "repetitions": 30,
+    "public_subset_only": true,
+    "comparisons": {
+      "reference": {
+        "matches": true,
+        "differences": []
+      },
+      "operation": {
+        "matches": true,
+        "differences": []
+      },
+      "refit_and_paired_gain": {
+        "matches": true,
+        "differences": []
+      }
+    },
+    "all_match": true
+  },
+  "tests": {
+    "repository_tests": 7,
+    "nested_scientific_tests": 12,
+    "all_passed": true
+  },
+  "manuscript_source_hashes": {
+    "manuscript": "86ac153e4f637c4ab510b69dd77ab218a77209b15823152cf89ed85c78493ff4",
+    "supplementary": "ba16c2cae16a45373812c27af0cb36b7e4ab28dc7aba8e9610034c121a2647d0"
+  },
+  "retained_prior_validation": "docs/verification.json records the earlier full cached-feature rerun; it has not been relabelled as a new run."
+}

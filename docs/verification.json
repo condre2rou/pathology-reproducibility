@@ -1,0 +1,273 @@
+{
+  "date": "2026-09-27",
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux",
+    "cpu_dependencies": "requirements.txt",
+    "scope": "Executed in the existing local research environment. No fresh online dependency installation or hosted GitHub Actions run was performed."
+  },
+  "full_annotation": {
+    "commands": [
+      "python reproduce.py full --data-root AUTHORIZED_ROOT --workers 4 --out NEW_OUTPUT"
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 434.9,
+    "compared_json_files": 435,
+    "all_compared_numbers_and_decisions_match": true,
+    "absolute_tolerance": 1e-10,
+    "finite_pool_tasks_refitted": 134,
+    "operational_tasks_refitted": 134,
+    "paired_gain_and_refit_task_files_recomputed": 134,
+    "natural_pilot_repetitions": 3941,
+    "balanced_pilot_repetitions": 3799,
+    "matched_refit_pilots": 402,
+    "valid_record_resample_refits": 39067,
+    "boundary": "Other supporting estimates staged for tables/figures are reference inputs; their independent reruns are listed separately."
+  },
+  "supporting_experiments": {
+    "task-characterisation": {
+      "commands": [
+        "python reproduce.py supporting --experiment task-characterisation --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 25.39,
+      "compared_json_files": 3,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "histology": {
+      "commands": [
+        "python reproduce.py supporting --experiment histology --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 9.31,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "additional-tasks": {
+      "commands": [
+        "python reproduce.py supporting --experiment additional-tasks --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 4.49,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "separability": {
+      "commands": [
+        "python reproduce.py supporting --experiment separability --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 38.83,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "active-selection": {
+      "commands": [
+        "python reproduce.py supporting --experiment active-selection --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 151.81,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "curve-extrapolation": {
+      "commands": [
+        "python reproduce.py supporting --experiment curve-extrapolation --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 38.75,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "quality": {
+      "commands": [
+        "python reproduce.py supporting --experiment quality --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 24.85,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "label-noise": {
+      "commands": [
+        "python reproduce.py supporting --experiment label-noise --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 5.49,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "ki67": {
+      "commands": [
+        "python reproduce.py supporting --experiment ki67 --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 1.4,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "wsi-confounding": {
+      "commands": [
+        "python reproduce.py supporting --experiment wsi-confounding --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 1.02,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "wsi-tasks": {
+      "commands": [
+        "python reproduce.py supporting --experiment wsi-tasks --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 24.37,
+      "compared_json_files": 2,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "cross-cohort": {
+      "commands": [
+        "python reproduce.py supporting --experiment cross-cohort --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 1.76,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "demographics": {
+      "commands": [
+        "python reproduce.py supporting --experiment demographics --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.64,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    },
+    "extractor-agreement": {
+      "commands": [
+        "python reproduce.py supporting --experiment extractor-agreement --data-root AUTHORIZED_ROOT --out NEW_OUTPUT"
+      ],
+      "status": "PASS",
+      "elapsed_seconds": 0.17,
+      "compared_json_files": 1,
+      "all_compared_numbers_and_decisions_match": true,
+      "absolute_tolerance": 1e-10
+    }
+  },
+  "aggregate_recomputation": {
+    "commands": [
+      "python reproduce.py aggregates --out NEW_OUTPUT"
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 24.58,
+    "compared_json_files": 435,
+    "all_compared_numbers_and_decisions_match": true,
+    "absolute_tolerance": 1e-10
+  },
+  "figure_and_table_rebuild": {
+    "commands": [
+      "python reproduce.py figures --out NEW_OUTPUT"
+    ],
+    "status": "PASS",
+    "elapsed_seconds": 4.75,
+    "compared_json_files": 435,
+    "all_compared_numbers_and_decisions_match": true,
+    "absolute_tolerance": 1e-10,
+    "figure_count": 13,
+    "formats": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "generated_figure_files": 39,
+    "exported_main_and_supplementary_tables": 16,
+    "difference_from_original": "Figure S5 fixes the swapped COAD/STAD MSI labels using the saved numerical results."
+  },
+  "real_public_example": {
+    "dataset": "WSI-COAD",
+    "records": 112,
+    "positive": 56,
+    "feature_dimension": 1536,
+    "repetitions": 30,
+    "public_subset_only": true,
+    "comparisons": {
+      "reference": {
+        "matches": true,
+        "differences": []
+      },
+      "operation": {
+        "matches": true,
+        "differences": []
+      },
+      "refit_and_paired_gain": {
+        "matches": true,
+        "differences": []
+      }
+    },
+    "all_match": true
+  },
+  "public_cache_restoration": {
+    "tasks": 85,
+    "cohorts": 15,
+    "all_feature_values_match": true,
+    "input": "Trusted original public NPZ caches; all 85 were not re-downloaded/rebuilt from H5 in this check."
+  },
+  "previously_verified_coad_h5_rebuild": {
+    "source": "pathology-pilot/docs/verification.json, earlier local packaging check on the same date",
+    "h5_files": 113,
+    "identical_processed_npz_files": true,
+    "new_network_download": false
+  },
+  "tests": {
+    "runner_integration_tests_passed": 7,
+    "scientific_regression_tests_called_by_integration_suite": 12,
+    "ast_parse": "PASS",
+    "new_interface_ruff_check": "PASS",
+    "analysis_formatting_ast_equivalence": "PASS"
+  },
+  "not_executed_during_packaging": [
+    "Raw-image encoder extraction, resolution/degradation GPU recomputation and temporal model training",
+    "Original SimCLR pretraining (historical image inventory incomplete)",
+    "External language-model report extraction or manual clinical label verification",
+    "Recreating the earlier pre-existing ImageNet temporal training history",
+    "Fresh download/reconstruction of all 85 public tasks from upstream H5 files"
+  ],
+  "distribution_scan": {
+    "no_manuscript_or_submission_files": true,
+    "no_hospital_inputs_or_identifiers": true,
+    "no_author_machine_paths": true,
+    "public_example_npz_git_ignored": true,
+    "large_upstream_data_and_weights_excluded": true,
+    "manuscript_sources_unchanged": true
+  },
+  "code_licence": "Pending owner selection",
+  "data_free_checkout": {
+    "status": "PASS",
+    "source": "Git-tracked files only, with no feature arrays",
+    "features_present": 0,
+    "tracked_files": 532,
+    "manifest_files_verified": 531,
+    "integration_tests_passed": 6,
+    "real_feature_test_skipped": 1,
+    "scientific_tests_invoked": 12,
+    "aggregate_recomputation": "PASS",
+    "matching_json_results": 435,
+    "figures_generated": 13,
+    "figure_files_generated": 39,
+    "csv_tables_generated": 16,
+    "hosted_github_actions_run": false
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "figures": [
+    {
+      "id": "Figure_1",
+      "stem": "fig_e12_framework"
+    },
+    {
+      "id": "Figure_2",
+      "stem": "fig_e12_task_spectrum"
+    },
+    {
+      "id": "Figure_3",
+      "stem": "fig_e11_saturation"
+    },
+    {
+      "id": "Figure_4",
+      "stem": "fig_e12_budget"
+    },
+    {
+      "id": "Figure_5",
+      "stem": "fig_e12_decisions"
+    },
+    {
+      "id": "Figure_6",
+      "stem": "fig8_degradation"
+    },
+    {
+      "id": "Figure_S1",
+      "stem": "fig2_resolution_ladder"
+    },
+    {
+      "id": "Figure_S2",
+      "stem": "fig4_confound_grade"
+    },
+    {
+      "id": "Figure_S3",
+      "stem": "fig5_snap_noise"
+    },
+    {
+      "id": "Figure_S4",
+      "stem": "fig3_core_comparison"
+    },
+    {
+      "id": "Figure_S5",
+      "stem": "fig6_cross_cancer"
+    },
+    {
+      "id": "Figure_S6",
+      "stem": "fig_e12_cohorts"
+    },
+    {
+      "id": "Figure_S7",
+      "stem": "fig_e12_repeatability"
+    }
+  ],
+  "tables": [
+    {
+      "id": "Table_1",
+      "label": "tab:cohorts"
+    },
+    {
+      "id": "Table_2",
+      "label": "tab:benchmark"
+    },
+    {
+      "id": "Table_3",
+      "label": "tab:decisions"
+    },
+    {
+      "id": "Table_S1",
+      "label": "tab:falsify"
+    },
+    {
+      "id": "Table_S2",
+      "label": "tab:alternatives"
+    },
+    {
+      "id": "Table_S3",
+      "label": "tab:finetune"
+    },
+    {
+      "id": "Table_S4",
+      "label": "tab:quality"
+    },
+    {
+      "id": "Table_S5",
+      "label": "tab:budget"
+    },
+    {
+      "id": "Table_S6",
+      "label": "tab:pairs"
+    },
+    {
+      "id": "Table_S7",
+      "label": "tab:balanced"
+    },
+    {
+      "id": "Table_S8",
+      "label": "tab:spectrum"
+    },
+    {
+      "id": "Table_S9",
+      "label": "tab:delta"
+    },
+    {
+      "id": "Table_S10",
+      "label": "tab:accounting"
+    },
+    {
+      "id": "Table_S11",
+      "label": "tab:sensitivity"
+    },
+    {
+      "id": "Table_S12",
+      "label": "tab:refit"
+    },
+    {
+      "id": "Table_S13",
+      "label": "tab:deletion"
+    }
+  ],
+  "manuscript_sha256": "de90c3f6ebcd62093bde4bdfc8e5f77d9d49ccb76b12e018efde0f7359ec917c",
+  "supplementary_sha256": "c7b8393c052f66460ea288831c95db4d112bc7acd64d8aa8d73bc4ffc35c43a8"
+}

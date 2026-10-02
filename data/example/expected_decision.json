@@ -1,0 +1,35 @@
+{
+  "n": 40,
+  "positives": 19,
+  "auroc": 0.6390977443609023,
+  "conditional_pair_resampling_interval": [
+    0.45854408749145587,
+    0.8177470238095239
+  ],
+  "conditional_oof_interval": [
+    0.45854408749145587,
+    0.8177470238095239
+  ],
+  "action": "insufficient",
+  "cut": 0.57,
+  "learning_curve": [
+    {
+      "n": 10,
+      "auroc": 0.6666666666666667
+    },
+    {
+      "n": 20,
+      "auroc": 0.7777777777777777
+    },
+    {
+      "n": 30,
+      "auroc": 0.8035714285714285
+    },
+    {
+      "n": 40,
+      "auroc": 0.6390977443609023
+    }
+  ],
+  "interpretation": "The conditional pair interval crosses the historical cut or the score cannot be estimated.",
+  "scope": "Conditional pair-resampling percentile interval with fold models fixed; no unconditional coverage or future-gain guarantee. The 0.57 threshold was historically data-selected. conditional_oof_interval is a compatibility alias. No full-data labels used."
+}

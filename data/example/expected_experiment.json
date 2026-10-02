@@ -1,0 +1,23 @@
+{
+  "dataset": "WSI-COAD",
+  "records": 112,
+  "positive": 56,
+  "feature_dimension": 1536,
+  "repetitions": 30,
+  "public_subset_only": true,
+  "comparisons": {
+    "reference": {
+      "matches": true,
+      "differences": []
+    },
+    "operation": {
+      "matches": true,
+      "differences": []
+    },
+    "refit_and_paired_gain": {
+      "matches": true,
+      "differences": []
+    }
+  },
+  "all_match": true
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-02",
+  "release": "2026-10-02_v5",
+  "license": "MIT",
+  "scope": "Original project source code and accompanying software documentation",
+  "third_party_terms": "Separate; datasets, derived feature arrays, pretrained models, weights and dependencies are not relicensed.",
+  "copyright_notice": "Copyright (c) 2026 The project contributors",
+  "citation_request": "The README asks users to cite the manuscript; this is not an additional license condition.",
+  "scientific_code_and_data_changed": false,
+  "historical_validation_records": "Preserved; their pending-license fields describe the earlier verification dates.",
+  "file_sha256": {
+    "README.md": "89d021d82738532405607a7e16c4e38771bd4d668dc84613434c04c038f78b62",
+    "LICENSE": "681b46f147610336a243b3c72cd08cd5904b2dee747e74c959ae57ade9e6b9df",
+    "LICENSING.md": "23026677da0bfc46facdb47cad5e91a430a43269f0f30f7700ef7fec92e3f847",
+    "CONTRIBUTING.md": "80a3f520206db82f32e7911e97b62e9e3dfedeb4ad79da50b32d3d50fc4989c6"
+  }
+}

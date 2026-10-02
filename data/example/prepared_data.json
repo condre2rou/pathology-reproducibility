@@ -1,0 +1,12 @@
+{
+  "source": "TCGA-COAD",
+  "pool_n": 112,
+  "pool_positive": 56,
+  "pilot_n": 40,
+  "pilot_positive": 19,
+  "files": {
+    "tcga_coad_msi_pool.npz": "f2d7827e57623418af1662e5355b21adb2313160e5e3ac69c5686e4b5781a702",
+    "tcga_coad_msi_pilot40.npz": "254aa243e26cdd3fdc41ed3b85ec687f20c92da8e649f5ea718c98b26bb77371"
+  },
+  "feature_values_sha256": "8d2018a677efb8e37603ac9e2a223df23cb64f28d504b999523bdc747210a0be"
+}

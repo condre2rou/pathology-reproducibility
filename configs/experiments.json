@@ -1,0 +1,359 @@
+{
+  "annotation": {
+    "description": "Full finite-pool, single-pilot and refitting experiments (use full mode)",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e6_learnability/res_feats_ssl.npz",
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz",
+      "e10_expansion/pooled/*.npz",
+      "e10_expansion/b_upside_data_v2.csv"
+    ],
+    "commands": [],
+    "results": []
+  },
+  "task-characterisation": {
+    "description": "Frozen Phikon/SimCLR/ImageNet task spectrum",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz"
+    ],
+    "commands": [
+      [
+        "e2_train/eval_phikon.py"
+      ],
+      [
+        "e2_train/robustness.py",
+        "--backbone",
+        "ssl"
+      ],
+      [
+        "e2_train/robustness.py",
+        "--backbone",
+        "imagenet"
+      ]
+    ],
+    "results": [
+      "e2_train/runs/tasks_phikon.json",
+      "e2_train/runs/robustness_ssl.json",
+      "e2_train/runs/robustness_imagenet.json"
+    ]
+  },
+  "histology": {
+    "description": "Serous versus endometrioid subtype",
+    "access": "authorised caches and reports",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz"
+    ],
+    "commands": [
+      [
+        "e6_learnability/b_histology.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/histology_robust_result.json"
+    ]
+  },
+  "additional-tasks": {
+    "description": "Lymphovascular invasion and myoinvasive depth",
+    "access": "authorised caches and reports",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz"
+    ],
+    "commands": [
+      [
+        "e6_learnability/validate_scale.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/validate_scale_result.json"
+    ]
+  },
+  "separability": {
+    "description": "Historical nearest-neighbour and separation correlations",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz",
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz"
+    ],
+    "commands": [
+      [
+        "e6_learnability/validate.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/validate_result.json"
+    ]
+  },
+  "active-selection": {
+    "description": "Historical random and active subset comparisons",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz",
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz"
+    ],
+    "commands": [
+      [
+        "e6_learnability/active_select.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/active_select_result.json"
+    ]
+  },
+  "curve-extrapolation": {
+    "description": "Historical learning-curve asymptote fits",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz",
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz"
+    ],
+    "commands": [
+      [
+        "e6_learnability/learning_curve.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/learning_curve_result.json"
+    ]
+  },
+  "quality": {
+    "description": "Native-image quality tertiles",
+    "access": "authorised images and caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz"
+    ],
+    "commands": [
+      [
+        "e9_revision/quality_strat.py"
+      ]
+    ],
+    "results": [
+      "e9_revision/quality_strat_result.json"
+    ]
+  },
+  "label-noise": {
+    "description": "Injected training-label flips on real grade records",
+    "access": "authorised caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e2_train/runs/feats_phikon.npz"
+    ],
+    "commands": [
+      [
+        "e13_review/supporting.py",
+        "noise"
+      ]
+    ],
+    "results": [
+      "e13_review/outputs/synthetic_noise.json"
+    ]
+  },
+  "ki67": {
+    "description": "172-case image-derived DAB target",
+    "access": "external archive cache; permissions unresolved",
+    "inputs": [
+      "e10_expansion/ki67_all172.npz"
+    ],
+    "commands": [
+      [
+        "e10_expansion/eval_ki67_172.py"
+      ]
+    ],
+    "results": [
+      "e10_expansion/ki67_172_result.json"
+    ]
+  },
+  "wsi-confounding": {
+    "description": "TCGA-UCEC grade-stratified dMMR",
+    "access": "public caches",
+    "inputs": [
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/tcga_confound.csv"
+    ],
+    "commands": [
+      [
+        "e5_tcga/confound_check.py"
+      ]
+    ],
+    "results": [
+      "e5_tcga/confound_result.json"
+    ]
+  },
+  "wsi-tasks": {
+    "description": "TCGA-UCEC grade/dMMR and COAD/STAD/BRCA",
+    "access": "public caches",
+    "inputs": [
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz",
+      "e5_tcga/multi_subset.csv",
+      "e5_tcga/tcga_confound.csv"
+    ],
+    "commands": [
+      [
+        "e5_tcga/ucec_wsi_tasks.py"
+      ],
+      [
+        "e5_tcga/train_multi.py"
+      ]
+    ],
+    "results": [
+      "e5_tcga/ucec_wsi_tasks.json",
+      "e5_tcga/multi_result.json"
+    ]
+  },
+  "cross-cohort": {
+    "description": "Task-matched, unpaired institutional/TCGA comparisons",
+    "access": "authorised reports and public caches",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz",
+      "e5_tcga/pooled_features.npz",
+      "e5_tcga/pooled/*.npz",
+      "e5_tcga/tcga_extra_labels.csv"
+    ],
+    "commands": [
+      [
+        "e6_learnability/expand_pairs.py"
+      ]
+    ],
+    "results": [
+      "e6_learnability/pairing_table.json"
+    ]
+  },
+  "degradation": {
+    "description": "Downsampling, blur, JPEG and illumination",
+    "access": "authorised images and GPU",
+    "inputs": [
+      "e2_data/manifest.csv"
+    ],
+    "commands": [
+      [
+        "e10_expansion/degradation_study.py"
+      ]
+    ],
+    "results": [
+      "e10_expansion/degradation_result.json"
+    ]
+  },
+  "resolution": {
+    "description": "Seven input-resolution conditions",
+    "access": "authorised images and GPU",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec.csv",
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e2_data/manifest.csv",
+      "e2_train/runs/feats_phikon.npz",
+      "e2_train/runs/feats_ssl.npz",
+      "e2_train/runs/feats_imagenet.npz",
+      "e2_train/runs/simclr_backbone.pt"
+    ],
+    "commands": [
+      [
+        "e2_train/resolution_ladder.py",
+        "--backbone",
+        "ssl"
+      ]
+    ],
+    "results": [
+      "e2_train/runs/resolution_ladder_ssl.json"
+    ]
+  },
+  "temporal-training": {
+    "description": "Temporal ImageNet/SimCLR/frozen-head training",
+    "access": "authorised images and GPU",
+    "inputs": [
+      "e2_data/manifest.csv",
+      "e2_data/splits.json",
+      "e2_train/runs/simclr_backbone.pt"
+    ],
+    "commands": [
+      [
+        "portable/temporal_runs.py"
+      ]
+    ],
+    "results": [
+      "e9_revision/finetune_imagenet_full.json",
+      "e9_revision/finetune_simclr_full.json",
+      "e9_revision/finetune_imagenet_frozen.json"
+    ]
+  },
+  "demographics": {
+    "description": "Main-cohort age, sex and report availability",
+    "access": "authorised reports",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e1_label_engine/outputs/image_index.csv"
+    ],
+    "commands": [
+      [
+        "e9_revision/demographics.py"
+      ]
+    ],
+    "results": [
+      "e9_revision/demographics_result.json"
+    ]
+  },
+  "extractor-agreement": {
+    "description": "Agreement between saved rule/LLM outputs",
+    "access": "authorised extraction outputs",
+    "inputs": [
+      "e1_label_engine/outputs/labels_ec_patient.csv",
+      "e1_label_engine/outputs/llm_extraction.csv",
+      "e1_label_engine/outputs/noise_prior_summary.json",
+      "e1_label_engine/outputs/e1_gold_metrics.json"
+    ],
+    "commands": [
+      [
+        "e1_label_engine/make_e1_summary.py"
+      ]
+    ],
+    "results": [
+      "e1_label_engine/outputs/e1_summary.json"
+    ]
+  }
+}

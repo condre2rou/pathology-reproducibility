@@ -1,0 +1,969 @@
+{
+  "dataset": "TCGA-COAD",
+  "endpoint": "MSI subtype vs other retained subtypes",
+  "observed_feature_revision": "35fd1739cc2ad3b2f35396d26b127d791aaec1a4",
+  "feature_dataset_url": "https://huggingface.co/datasets/W8Yi/tcga-wsi-uni2h-features",
+  "feature_resolve_base": "https://huggingface.co/datasets/W8Yi/tcga-wsi-uni2h-features/resolve/35fd1739cc2ad3b2f35396d26b127d791aaec1a4",
+  "label_source_url": "https://www.cbioportal.org/api/studies/coadread_tcga_pan_can_atlas_2018/clinical-data?clinicalDataType=PATIENT&attributeId=SUBTYPE&projection=SUMMARY",
+  "original_cache_sha256": "fc2286502c68497e6efe92e5ab6978dc1c17bfc4e0a3e0a758bd123911d61bd8",
+  "feature_dimension": 1536,
+  "feature_dtype": "float32",
+  "pool_n": 112,
+  "pool_positive": 56,
+  "pooling": "Mean patch vector within each slide, then equal mean of slide vectors within each participant. No global standardisation.",
+  "pool_selection": "Previously selected balanced source pool, 56 per class, favouring fewer available feature files. Not a population-prevalence sample.",
+  "pilot_selection": "RandomState(0).choice(112,40,replace=False), without inspection of model outputs",
+  "pilot_seed": 0,
+  "pilot_row_indices": [
+    26,
+    48,
+    10,
+    66,
+    96,
+    7,
+    91,
+    2,
+    90,
+    33,
+    22,
+    78,
+    75,
+    100,
+    82,
+    92,
+    16,
+    13,
+    106,
+    45,
+    24,
+    93,
+    89,
+    8,
+    63,
+    30,
+    59,
+    3,
+    62,
+    54,
+    68,
+    6,
+    51,
+    111,
+    84,
+    97,
+    43,
+    74,
+    60,
+    27
+  ],
+  "participants": [
+    {
+      "participant_id": "TCGA-5M-AAT6",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-5M-AAT6-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-5916",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-5916-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-6746",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-6746-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4743",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4743-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4746",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4746-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5861",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5861-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6162",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6162-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6171",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6171-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6674",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6674-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6530",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6530-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6540",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6540-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6927",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6927-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-5913",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-5913-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6928",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6928-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-F4-6570",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-F4-6570-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-F4-6703",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-F4-6703-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-F4-6856",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-F4-6856-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6302",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6302-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6304",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6304-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6309",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6309-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6320",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6320-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6586",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6586-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6588",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6588-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-G4-6628",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-G4-6628-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-NH-A5IV",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-NH-A5IV-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6930",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6930-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-4951",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-4951-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AZ-6598",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AZ-6598-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AZ-4615",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AZ-4615-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-A6-2686",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-A6-2686-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-A6-5661",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-A6-5661-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-A6-5665",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-A6-5665-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-A6-6653",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-A6-6653-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-A6-A565",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-A6-A565-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3715",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3715-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3811",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3811-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3821",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3821-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3833",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3833-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3845",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3845-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3864",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3864-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3877",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3877-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3947",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3947-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3949",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3949-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-3966",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-3966-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-A01P",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-A01P-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AA-A01R",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AA-A01R-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AD-5900",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AD-5900-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AD-6889",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AD-6889-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AD-6895",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AD-6895-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AD-6964",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AD-6964-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AD-A5EJ",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AD-A5EJ-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AM-5821",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AM-5821-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AU-6004",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AU-6004-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-AY-6197",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-AY-6197-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-WS-AB45",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-WS-AB45-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-QG-A5Z2",
+      "label": 1,
+      "source_subtype": "COAD_MSI",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-QG-A5Z2-01Z-00-DX1.h5",
+        "TCGA-COAD/features/TCGA-QG-A5Z2-01Z-00-DX2.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CA-6719",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CA-6719-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6170",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6170-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6172",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6172-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6675",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6675-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6676",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6676-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6677",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6677-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6678",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6678-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6679",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6679-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6680",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6680-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-5537",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-5537-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-5538",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-5538-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-5539",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-5539-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-5540",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-5540-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-5541",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-5541-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6169",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6169-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6529",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6529-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6532",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6532-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6533",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6533-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6534",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6534-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6535",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6535-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6536",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6536-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6537",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6537-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6538",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6538-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6539",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6539-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6541",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6541-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6898",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6898-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6920",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6920-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6922",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6922-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6924",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6924-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-D5-6531",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-D5-6531-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6168",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6168-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6167",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6167-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-6166",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-6166-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-SS-A7HO",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-SS-A7HO-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-4947",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-4947-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-4948",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-4948-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-4950",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-4950-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-4952",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-4952-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-5912",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-5912-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-5914",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-5914-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-5915",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-5915-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-6747",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-6747-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-6748",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-6748-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CK-6751",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CK-6751-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4744",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4744-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4747",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4747-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4750",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4750-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4751",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4751-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-4752",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-4752-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5341",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5341-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5344",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5344-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5348",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5348-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5349",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5349-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5860",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5860-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5862",
+      "label": 0,
+      "source_subtype": "COAD_CIN",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5862-01Z-00-DX1.h5"
+      ]
+    },
+    {
+      "participant_id": "TCGA-CM-5863",
+      "label": 0,
+      "source_subtype": "COAD_GS",
+      "feature_files": [
+        "TCGA-COAD/features/TCGA-CM-5863-01Z-00-DX1.h5"
+      ]
+    }
+  ],
+  "provenance_note": "Original pooled bytes are authenticated by cache hash. Observed revision directory alone does not authenticate every historical downloaded H5 or encoder setting.",
+  "redistribution_status": "Local processed examples are Git-ignored; third-party terms are not replaced by a project code licence.",
+  "exported_pool_sha256": "f2d7827e57623418af1662e5355b21adb2313160e5e3ac69c5686e4b5781a702",
+  "exported_pilot_sha256": "254aa243e26cdd3fdc41ed3b85ec687f20c92da8e649f5ea718c98b26bb77371",
+  "upstream_revision_exists_verified_on": "2026-09-27",
+  "local_h5_rebuild_verified": {
+    "slide_files": 113,
+    "pooled_features_and_labels_identical": true,
+    "exported_npz_sha256_identical": true,
+    "new_network_download": false
+  }
+}

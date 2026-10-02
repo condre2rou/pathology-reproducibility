@@ -1,0 +1,371 @@
+[
+  {
+    "file": "analysis/e10_expansion/build_cohort_tasks.py",
+    "sha256": "042c388f30226cb3ea04b9a0670dc169f707454d9aad00d94d856a9ec984a955",
+    "source": "e10_expansion/build_cohort_tasks.py",
+    "original_sha256": "b81eb00b2602f40e9c2298dc1dc15d064163ef34c3ea4c5e7fbfb08137a8888c",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e10_expansion/build_ovarian_points.py",
+    "sha256": "10d9673e29af40676bf691a872582adf25cb52f4149b7d8a0e10535a74867c87",
+    "source": "e10_expansion/build_ovarian_points.py",
+    "original_sha256": "d7c3c7d0a0161f88b7eaff4b0c50fb4909f354fa80abd81a656799519fba1ccd",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e10_expansion/degradation_study.py",
+    "sha256": "c3f2169fc0a7ee7599cbc78125baa997c08e45ca03558b00a75823168841aa78",
+    "source": "e10_expansion/degradation_study.py",
+    "original_sha256": "dbcf37a0f98a6f7b16f1d3bafe7dc4d8a5d42ed8fa97a37048e8118c5830f96e",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e10_expansion/eval_ki67_172.py",
+    "sha256": "7e3353235afa6aff630113aae66b1ae98ed893a647a5c8c649147f02d0516352",
+    "source": "e10_expansion/eval_ki67_172.py",
+    "original_sha256": "956d4ad5d18a7ec49b8e2356d7a53305c6d6aae8e4b6fa79ab1eba94850dc198",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e10_expansion/expand_ki67.py",
+    "sha256": "b7b9b70880e41d4e8187a9aa5a979db87d1ffcd2c8b3c55bf573e5fe4d6471ed",
+    "source": "e10_expansion/expand_ki67.py",
+    "original_sha256": "71bf1d2dfc95eeb4b3efc9e97a8fc37ff76880b25432215242af35d04d0258e8",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/cli.py",
+    "sha256": "01fbc666da2bce48d10dcde8acc90b98d9e9e7590e9fcd493f65aed8a6c9307a",
+    "source": "e11_method_audit/cli.py",
+    "original_sha256": "c053e0fa804a46f256be33e774ad86abc33621f39e52c5f0ccd0d5efeb0d61e7",
+    "port_changes": "Retains the assessment interface and imports; excludes the synthetic demonstration."
+  },
+  {
+    "file": "analysis/e11_method_audit/core.py",
+    "sha256": "4d7e934fac99d2d758658cf6b9945ad627a1198a42d807f60fad2b2b65a284df",
+    "source": "e11_method_audit/core.py",
+    "original_sha256": "ad1cb697af28d2bed56f5874e52502bed9dd4a41c6bc8b97419ceee90cefc882",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/data.py",
+    "sha256": "3894e7eafa2e21a2c99ee181b8c21837d89f8125c371fc181792feedc30de4af",
+    "source": "e11_method_audit/data.py",
+    "original_sha256": "011e94f5e5fdd29f211a9f7659bec55af7472b453ddb92137ae7e3915d443294",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/figures.py",
+    "sha256": "9ec5b48a28511a5f2ee73516257e6084441fc430373b6e7e6a573b83613ba511",
+    "source": "e11_method_audit/figures.py",
+    "original_sha256": "12a0206384d4605f9955aa4908fb7d1f36267395864717a023a8fc463604e3c2",
+    "port_changes": "Only the cited saturation figure is generated; superseded diagrams removed."
+  },
+  {
+    "file": "analysis/e11_method_audit/run.py",
+    "sha256": "46c375d1278c40c8889883dae040232e620c42c84f66ad996f8f8669b048ffe3",
+    "source": "e11_method_audit/run.py",
+    "original_sha256": "dd91d0c89278bbc4700e043551b1a13a137e39e39985ae6833af198a6e211f0d",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/score_uncertainty.py",
+    "sha256": "5f3dc5589589722ca0d92c99551da8b41dab95ca4fc666916cc53a78dc2146ff",
+    "source": "e11_method_audit/score_uncertainty.py",
+    "original_sha256": "4f8cec107c6352019818c182834e04db99031c33c7c3f54873f9d44b31875f58",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/summarize.py",
+    "sha256": "31142702a9bdedbfaf748cb6fd5e0574eebdec5d4046d5a594c0538c322a9de0",
+    "source": "e11_method_audit/summarize.py",
+    "original_sha256": "a5f1356a72223ce501fbe0c331b009cc40405fc40c9cf7c2379f0359ba676ac6",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e11_method_audit/test_core.py",
+    "sha256": "ed0a1bb7ac819e4c7a6558c3ed284370d6b10841f64a2d5885877a3acb6f8bfd",
+    "source": "e11_method_audit/test_core.py",
+    "original_sha256": "945b90e6c9c4493ceb5f710133dae22c262a1b3400aa0183bc603ebdb89d8e07",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e12_editorial/figures.py",
+    "sha256": "9d060468a98e33464c627b6f8e954bc01ae11a49eaea5cb78fb4d9a7f6e65461",
+    "source": "e12_editorial/figures.py",
+    "original_sha256": "74c70cd332f8af95aed4b59717aff6993b69cdef17d2650c03ad30c544f7e9cd",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e13_review/figures.py",
+    "sha256": "6cdc0864418f3b51c4630a7929e7b4f708fa4cdb9924230095a4a31faf49fa7a",
+    "source": "e13_review/figures.py",
+    "original_sha256": "080b0397ccad2935ebac8898a594a46f32f27dfecbb95ff6cbdcd5869a1cde4a",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e13_review/reanalyse.py",
+    "sha256": "26a58b0ec17626dccad10b395f50a70b32656940b32c50f16bf5e5306aeac81b",
+    "source": "e13_review/reanalyse.py",
+    "original_sha256": "256cdaa5607245d38da6ebfa1c73a9a84b7665d292e4bee974e7414255fa1618",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e13_review/supporting.py",
+    "sha256": "f1e5bd88916e6c2b8ffa2fc7e4e06324e11b9aef0e411044225a74b15afdd2a8",
+    "source": "e13_review/supporting.py",
+    "original_sha256": "f1cb57b6cd97e71c71a476f5ca4ac160132e966930a575abecf5f492c39680c7",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e13_review/test_review.py",
+    "sha256": "7b4afdd84cb9ccf1d32c02a8ea5a14bacc8ed2c1e683f376f2a9cc7b1e8bbbac",
+    "source": "e13_review/test_review.py",
+    "original_sha256": "2a18092448e33e786e2300482cc2ae0d7c509d700508d63e219a8866c98ff9d2",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e1_label_engine/align_seq_key.py",
+    "sha256": "7133ea1765310ff6ce4a515684fd9b1217dc23735bc2bf0021daef92eba3f401",
+    "source": "e1_label_engine/align_seq_key.py",
+    "original_sha256": "d50369799dcf1189e1fe9aae5508be2097ef6c72e4e812a61441b18b47fe54db",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e1_label_engine/extract_rules.py",
+    "sha256": "726813550b5e948e9fa34bcd73d99216954f89e023e2618e284a15fe325cdf1f",
+    "source": "e1_label_engine/extract_rules.py",
+    "original_sha256": "ba7c883328ab29b8604b46405d3fbd3bb3e8e21890c36634ea828a0e60bffca9",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e1_label_engine/freeze_labels.py",
+    "sha256": "0ae7f31fa43a49489db83f3f034e74d6e9fba5bc8de1d2dc9b7c38df81c41082",
+    "source": "e1_label_engine/freeze_labels.py",
+    "original_sha256": "8af02df6ff1dbe7e75e5e3112baa1e99bdbb4ede3d71f6f8612394fc73014c4c",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e1_label_engine/make_e1_summary.py",
+    "sha256": "458b7803f8fb413b1d4053806d8e911f0e97002aeb14b9405ce39b69830f4161",
+    "source": "e1_label_engine/make_e1_summary.py",
+    "original_sha256": "cc86fdce5a9ad66d66a53365657f6b537070388547ea717a1d8aef7bdf7d8caa",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_data/make_splits.py",
+    "sha256": "f21026ffcb3a0e9f0ecd4b0387d440cda058ff4db54d71cba7dff0ac4340697e",
+    "source": "e2_data/make_splits.py",
+    "original_sha256": "73832341018080185e02a858d7970528487ed49f57998380c37064b6f3c65e0b",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/data.py",
+    "sha256": "7e2855978ee7e4d92614db2c624e1a3cad17a73eaf29786c76f0c8aa04d16ca2",
+    "source": "e2_train/data.py",
+    "original_sha256": "f1ebf85320328b438c4e9a15f0481c2712247f8d91acf81173b223ae72f1148c",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/eval_phikon.py",
+    "sha256": "4eb9cc02a2e8d40e4c4e30e248597b67ffef7617b71b591cf727d5da8c49d721",
+    "source": "e2_train/eval_phikon.py",
+    "original_sha256": "8ac8723d2890a16f2f64db7e0843b033448348da2115bb606fcd59828a228f40",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/eval_tasks.py",
+    "sha256": "200ed4119d8e049af589d78e2a27d300e2a928f156074383108175142a3c2fee",
+    "source": "e2_train/eval_tasks.py",
+    "original_sha256": "cc384363763b7ff21b71bfd9c81a12cce90d429b4d49dfaa54000cc8dafe2afc",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/resolution_ladder.py",
+    "sha256": "b344f0766495e3e8ff82272450829d2dec933f1e5214d19d6292ddcf989f1637",
+    "source": "e2_train/resolution_ladder.py",
+    "original_sha256": "3f293e0e84c9671c06727b5a9a4d89b5c856ce727bfbd5683e3da6f1eab3a0ac",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/robustness.py",
+    "sha256": "491383e20845d57be79de00c87fb74024578e8aff552cf8fa8a4d8b5bcb6d0e7",
+    "source": "e2_train/robustness.py",
+    "original_sha256": "c47674f9debec79ae3ef1426e2a7e563d4cfa08289c3f588aa2a9e313e3181ba",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/snap_synthetic.py",
+    "sha256": "17726fd0abbd60f38ab32c4763f9d961930d0ea8590f3a3b9c9bf842ff04e9c3",
+    "source": "e2_train/snap_synthetic.py",
+    "original_sha256": "0272ec5cbdab64302903ca10860d1ecb73b2a708ef63f0cd21b9b65ca75ce5c8",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/ssl_pretrain.py",
+    "sha256": "4451c186fa2c02df423dfe65e893f706ca7cccbbb456365658e60f8a5ad7a00d",
+    "source": "e2_train/ssl_pretrain.py",
+    "original_sha256": "38aa6dc1ac5175bc41817b973ed16344a895b626b4d32495bb0e2ad7148e1b50",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e2_train/train_baseline.py",
+    "sha256": "745b3f0448e3b6c845b4f57f29c495f7e713e76cc76db3dd4874ce8c4d5ec651",
+    "source": "e2_train/train_baseline.py",
+    "original_sha256": "2431e72a2612d2a9e2983946557491b3df65b3f8703b47c0cf860f03b398906f",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/confound_check.py",
+    "sha256": "0773eb9033b44d019d7d61cc627b9c32e382d1c4c64fdfba9b19914a57a423ef",
+    "source": "e5_tcga/confound_check.py",
+    "original_sha256": "cf8e22d653195da0afd121aa52b9ececa9136404f38070af96b139bc8cb9b66f",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/fetch_clinical.py",
+    "sha256": "becf7ebe7d5b6598bdd14454c692d9302178e600356761c29c5d02ad383408e3",
+    "source": "e5_tcga/fetch_clinical.py",
+    "original_sha256": "28e27c16d03134d6376ed24cc9a522d3bfa57d3e69d85ba3325e8877ca0fdb8d",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/fetch_extra_labels.py",
+    "sha256": "becf068bf255537704cad9d6182e5def8a8be16c142c1d018e54fd7dd19edab4",
+    "source": "e5_tcga/fetch_extra_labels.py",
+    "original_sha256": "4d41a68f0ddb82b074be54713c30c9387059b147c30ad590fe857010a5c1167d",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/fetch_labels.py",
+    "sha256": "5507146535f2ad83d1fbef92a1d8670607bd7c251f049a7f8d8ebf8a49d58af5",
+    "source": "e5_tcga/fetch_labels.py",
+    "original_sha256": "d3b2d07450d200d6d833e78efda19118da4035b1f780c78bf09e898a00190a36",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/prepare_multi.py",
+    "sha256": "f4ccdb9dd98c5037227cecd5558fea8a591101db0114a4d43f0945dc6850a0a0",
+    "source": "e5_tcga/prepare_multi.py",
+    "original_sha256": "e10840947c0f760beabb185dc3d7ca713ac6be5efcbd687ec135680009c52235",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/prepare_tcga.py",
+    "sha256": "97f4757b7cc72b8f443aed4c69d24aacef359f460998f40af5ae799deda01f42",
+    "source": "e5_tcga/prepare_tcga.py",
+    "original_sha256": "0b9589ecd72a13e4b30d9526d5134f6000cf189e603d171a202432be3c783e10",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/train_mil.py",
+    "sha256": "2dc82093d422e838311e320b6e1d935f8970f778d1c4506cb7195ea35dd3b89f",
+    "source": "e5_tcga/train_mil.py",
+    "original_sha256": "94157ff5fa21e124df7d1e8683165c9a252fbe7c0b874638ddf6612af46dfdbc",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/train_multi.py",
+    "sha256": "f864ecd0b3f2217e8f911e29bd6e52f5c506cdc26f81b67b657ef4c5aaae7387",
+    "source": "e5_tcga/train_multi.py",
+    "original_sha256": "66ea2029f89ed4dcb7dcb2d787237f7316071109032fb4f8fe839c7cc9ad5ee7",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e5_tcga/ucec_wsi_tasks.py",
+    "sha256": "a85413eae997ad8334c3251b875211cf43d30ef44fd59432d5636c3fe74b38f8",
+    "source": "e5_tcga/ucec_wsi_tasks.py",
+    "original_sha256": "a4d8351601bbb701b3edd89fde1f7ae7a0e972a5b934a9381622d575a5eac23a",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/active_select.py",
+    "sha256": "9d3540c2280696463fc9ff76656c541db10e1b7918763ff56e6402282e007557",
+    "source": "e6_learnability/active_select.py",
+    "original_sha256": "7d92c697da5a1e587b42978bde73cf984a1fca42ebf390e0fa839c0501fa048c",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/b_histology.py",
+    "sha256": "6b750525e531bb4b58273a0f76c21fa68feac040da39a808982fcc4e6f9f4e50",
+    "source": "e6_learnability/b_histology.py",
+    "original_sha256": "f3eac886eb6693aa04e10b97278412a97ac6c1603558321aa25c3934864c3d70",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/calibrate.py",
+    "sha256": "497c2e0fac80efaf95f73358fdc0ac064014a29153a5fa1778de65b967af24fa",
+    "source": "e6_learnability/calibrate.py",
+    "original_sha256": "84a55c8678f9e74b45c4fbdb28fe0ede673dbc85da3e2abdb778b4e784d5678f",
+    "port_changes": "Only the three required separation helper functions are retained; function computations unchanged."
+  },
+  {
+    "file": "analysis/e6_learnability/expand_pairs.py",
+    "sha256": "fc4c3a082d749e8b027ee468159a6d7200a109c18b9eb057e84ba412373e6187",
+    "source": "e6_learnability/expand_pairs.py",
+    "original_sha256": "955eff4402483bd2a5f86350dfeac257fc65754ae15da4127ab056c89f6c9935",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/extract_res_features.py",
+    "sha256": "e524a27706a1aaca65dd9c0f8f8f90d2f1d0c3e1887def0350344677aaae8cf0",
+    "source": "e6_learnability/extract_res_features.py",
+    "original_sha256": "ec673f035e529ae2ffdd35ba38c73be09c9d9de494a88083c954a49b2e025809",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/learning_curve.py",
+    "sha256": "cafe44f0187e893b4e1c5a90759856df904a6022e0342f1a4f57b2df231344ce",
+    "source": "e6_learnability/learning_curve.py",
+    "original_sha256": "ebd85880a3787859f2a14d5e139a0d43f40ae96fbf338d9a3249acab3d27aeb3",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/validate.py",
+    "sha256": "bd338919f23d394a8d1d75efa28c6485fee67b32a1b884350f105e60e11e2ead",
+    "source": "e6_learnability/validate.py",
+    "original_sha256": "eada874a5539380ed3c101e88b74e5c2946bc0e2675defaa402a2dd3e81bf8bd",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e6_learnability/validate_scale.py",
+    "sha256": "a831aa0362f027de81eef9513a53548c1e094e88615d692c6e3d3256c7d1dde1",
+    "source": "e6_learnability/validate_scale.py",
+    "original_sha256": "9da83b60ce062bc1a691c823f3f5516adf17aa70a90f5f328d1dc0278d24d22c",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e9_revision/demographics.py",
+    "sha256": "d122ddaee5037316f885cf06cdcccb8f8ae2c1ed0b317fdab08f2ab102aa3f7e",
+    "source": "e9_revision/demographics.py",
+    "original_sha256": "aad6dc847052e703030813b6d6b9eba585747d608d55c2b75a5c44dc69ab869f",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/e9_revision/quality_strat.py",
+    "sha256": "677e5f4d5f1d1952d123327e1716adb04935b216124c9c99d7bc7f8133bd43eb",
+    "source": "e9_revision/quality_strat.py",
+    "original_sha256": "c665b9b0d8157bfaafdd562c62a08f97523d53f127d6dd0dd867d560205cf80f",
+    "port_changes": "Portable input roots, English comments/docstrings, consistent formatting; numerical protocols retained."
+  },
+  {
+    "file": "analysis/figures/make_figures.py",
+    "sha256": "f6de3811068157efde01cde362a9fe9d44a19012ddb9655e58d58d6abf88972d",
+    "source": "figures/make_figures.py",
+    "original_sha256": "9fc2b532a15c5b5bf075415264af6813f5d610ce10baee4c768308f5ea46a4ae",
+    "port_changes": "Keeps only cited diagrams; reads saved estimates in place of copied constants; corrects COAD/STAD labels in Figure S5."
+  },
+  {
+    "file": "analysis/portable/fit_tasks.py",
+    "sha256": "23a2b2eaf3f6d4a81ab770cc6e8157b43c6fe91603cdb947cbefff6b3a1052cf",
+    "source": null,
+    "port_changes": "New orchestration adapter; calls the retained scientific functions."
+  },
+  {
+    "file": "analysis/portable/temporal_runs.py",
+    "sha256": "7f807355edc3f95cd8cee841c5d37eeb717637303f851a0d1f215b528a7b9c2f",
+    "source": null,
+    "port_changes": "New orchestration adapter; calls the retained scientific functions."
+  }
+]

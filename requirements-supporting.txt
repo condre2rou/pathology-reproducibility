@@ -1,0 +1,10 @@
+-r requirements-data.txt
+Pillow==12.3.0
+pypinyin==0.55.0
+xlrd==2.0.2
+openpyxl==3.1.5
+tqdm==4.70.1
+requests==2.34.2
+transformers==5.17.0
+huggingface-hub==1.31.0
+# Install the matching PyTorch/torchvision build separately; see docs/environments.md.
