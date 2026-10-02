@@ -112,20 +112,3 @@ represent uncertainty in future annotation gains.
 
 See [tutorial](docs/tutorial.md), [experiment map](docs/experiments.md),
 [methods](docs/methods.md), and [verification](docs/verification.json).
-
-## Citation
-
-If you use this software in your research, please cite the accompanying paper:
-
-> Wan Sijie and Teng Da. *Task feasibility and annotation decisions in low-resource
-> computational pathology*. Manuscript, 2026.
-
-This is a citation request, not an additional condition of the MIT License.
-
-## Revision verification
-
-This delivery was checked on 29 September 2026. See [revision verification](docs/revision_verification.json) for the executed checks and their scope. Earlier validation records are retained separately.
-
-The license and README were updated on 2 October 2026; see
-[licensing update](docs/licensing_update.json). Earlier verification records
-describe the licensing status at the time of those checks.
